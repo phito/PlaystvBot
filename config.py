@@ -19,6 +19,15 @@ SUBREDDITS= [ 'GlobalOffensive', 'Overwatch', 'leagueoflegends',
               'LeBlancMains', 'warthunder', 'tf2',
               'Doom']
 
+REDDIT_MSG = """[YouTube Mirror](https://youtu.be/{url})\n
+             ****\n
+             [^contact](https://www.reddit.com/message/compose?to=Phito41) ^-
+             [^source](https://github.com/phito41/PlaystvBot)"""
+
+YOUTUBE_DESCR = """PlaysTv URL: {playstv_url}\nReddit thread: {reddit_url}\n
+                I am a bot, and not affiliated with plays.tv, all copyrights reserved to their respective owners.\n
+                Source code: https://github.com/phito41/PlaystvBot"""
+
 VIDEO_CACHE_FILE = 'videos.txt'
 REDDIT_CACHE_FILE = 'reddit.txt'
 DOWNLOAD_FOLDER = 'videos/'

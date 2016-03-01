@@ -80,18 +80,14 @@ def check_subreddit(subreddit):
 
                 print('Uploading to Youtube...')
                 youtube_id = youtube.upload(yt, config.DOWNLOAD_FOLDER + video_id + '.mp4', video_title,
-                               'PlaysTv URL: ' + url + '\nReddit URL: ' + submission.short_link +
-                               '\nI am a bot, and not affiliated with plays.tv, all copyrights reserved to their respective owners.', '')
+                                            YOUTUBE_DESCR.format(playstv_url=url, reddit_url=submission.short_link), '')
                 add_cache_video(video_id, youtube_id)
                 print('Done! Youtube ID: ' + youtube_id)
             else:
                 print('Video already downloaded! Youtube ID: ' + youtube_id)
 
             print('Replying to reddit post...')
-            submission.add_comment('[YouTube Mirror](https://youtu.be/' + youtube_id + ')\n' +
-                             '****\n' +
-                             '^This ^bot ^is ^currently ^in ^beta, ^feel ^free ^to ^report ^any ^bugs ^or ^suggestions ^:)\n\n' +
-                             '[^beep ^boop, ^contact ^the ^dev.](https://www.reddit.com/message/compose?to=Phito41)')
+            submission.add_comment(REDDIT_MSG.format(url = youtube_id))
             submission.upvote()
             print('All done!\n-------------------------')
 
