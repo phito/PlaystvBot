@@ -4,6 +4,7 @@ import config
 import time
 import re
 import praw
+import os
 
 # regex used to find a playstv url
 re_url = re.compile('(https?:\/\/(?:[a-z0-9-]+\.)*plays\.tv(?:\S*)?)')
@@ -15,7 +16,11 @@ print('Logging into Reddit...')
 reddit = praw.Reddit(user_agent=config.REDDIT_USER_AGENT)
 reddit.login(config.REDDIT_USER, config.REDDIT_PASSWD, disable_warning=True)
 print('Logging into YouTube...')
-yt = youtube.auth()
+# yt = youtube.auth()
+
+def touch(path):
+    with open(path, 'a'):
+        os.utime(path, None)
 
 def get_cache_video(video_id):
     with open(config.VIDEO_CACHE_FILE, 'r') as f:
@@ -94,6 +99,13 @@ def check_subreddit(subreddit):
             already_done.append(submission.id)
             save_reddit_cache()
 
+# create files/folders
+touch(config.VIDEO_CACHE_FILE)
+touch(config.REDDIT_CACHE_FILE)
+if not os.path.exists(config.DOWNLOAD_FOLDER):
+    os.makedirs(config.DOWNLOAD_FOLDER)
+
+# load cache
 load_reddit_cache()
 
 while True:

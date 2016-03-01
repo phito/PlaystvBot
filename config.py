@@ -1,5 +1,6 @@
 # reddit configuration
 REDDIT_USER_AGENT='playstv'
+# leave empty to be prompted for credentials at start
 REDDIT_USER=''
 REDDIT_PASSWD=''
 SUBREDDITS= [ 'GlobalOffensive', 'Overwatch', 'leagueoflegends',
