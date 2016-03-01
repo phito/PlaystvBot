@@ -17,7 +17,7 @@ print('Logging into Reddit...')
 reddit = praw.Reddit(user_agent=config.REDDIT_USER_AGENT)
 reddit.login(config.REDDIT_USER, config.REDDIT_PASSWD, disable_warning=True)
 print('Logging into YouTube...')
-# yt = youtube.auth()
+yt = youtube.auth()
 
 def touch(path):
     with open(path, 'a'):
