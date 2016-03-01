@@ -5,6 +5,7 @@ import time
 import re
 import praw
 import os
+import traceback
 
 # regex used to find a playstv url
 re_url = re.compile('(https?:\/\/(?:[a-z0-9-]+\.)*plays\.tv(?:\S*)?)')
@@ -112,8 +113,9 @@ while True:
     print('Checking subreddits...')
 
     for sub in config.SUBREDDITS:
-	try:
+    	try:
             check_subreddit(sub)
             time.sleep(10)
-	except Exception:
-	    pass
+    	except Exception, err:
+            traceback.print_exc()
+    	    pass
