@@ -15,7 +15,7 @@ SUBREDDITS= [ 'GlobalOffensive', 'Overwatch', 'leagueoflegends',
               'hearthstone', 'heroesofthestorm', 'DotA2',
               'Draven', 'Xcom', 'LeagueOfMemes',
               'TeemoTalk', 'Velkoz', 'ekkomains',
-    	      'starcraft', 'RivalsOfAether', 'csclips'
+    	      'starcraft', 'RivalsOfAether', 'csclips',
     	      'funny', 'LeagueOfVideo', 'duckgame',
               'LeBlancMains', 'warthunder', 'tf2',
               'Doom']
@@ -29,6 +29,5 @@ YOUTUBE_DESCR = ('PlaysTv URL: {playstv_url}\nReddit thread: {reddit_url}\n'
                 'I am a bot, and not affiliated with plays.tv, all copyrights reserved to their respective owners.\n'
                 'Source code: https://github.com/phito41/PlaystvBot')
 
-VIDEO_CACHE_FILE = 'videos.txt'
-REDDIT_CACHE_FILE = 'reddit.txt'
+DATABASE_FILE = 'data.db'
 DOWNLOAD_FOLDER = 'videos/'
