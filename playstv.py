@@ -1,6 +1,7 @@
 import requests
 import re
 import config
+import HTMLParser
 
 # user agent used to access playstv
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
@@ -13,8 +14,9 @@ re_vidid = re.compile('akamaihd\.net\/video\/([a-zA-Z0-9-_]*)\/processed')
 re_title = re.compile(ur'data-share-text=\\"(.*?)\\"')
 
 def get_title(url):
-    html = requests.get(url, headers={'User-Agent': USER_AGENT}).content
-    match_title = re.search(re_title, str(html))
+    h = HTMLParser.HTMLParser()
+    html = h.unescape(requests.get(url, headers={'User-Agent': USER_AGENT}).content.encode('utf-8'))
+    match_title = re.search(re_title, html)
 
     if match_title:
         return match_title.group(1)
@@ -22,8 +24,9 @@ def get_title(url):
         return False
 
 def get_video_id(url):
-    html = requests.get(url, headers={'User-Agent': USER_AGENT}).content
-    match_id = re.search(re_vidid, str(html))
+    h = HTMLParser.HTMLParser()
+    html = h.unescape(requests.get(url, headers={'User-Agent': USER_AGENT}).content.encode('utf-8'))
+    match_id = re.search(re_vidid, html)
 
     if match_id:
         return match_id.group(1)
