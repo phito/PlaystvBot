@@ -7,6 +7,7 @@ import praw
 import os
 import traceback
 import sqlite3
+import random
 
 # regex used to find a playstv url
 re_url = re.compile('(https?:\/\/(?:[a-z0-9-]+\.)*plays\.tv(?:\S*)?)')
@@ -100,7 +101,7 @@ def check_subreddit(subreddit):
                 print('Video already downloaded! Youtube ID: ' + youtube_id)
 
             print('Replying to reddit post...')
-            submission.add_comment(config.REDDIT_MSG.format(url = youtube_id))
+            submission.add_comment(config.REDDIT_MSG.format(url = youtube_id, quote = random.choice(config.QUOTES)))
             submission.upvote()
             print('All done!\n-------------------------')
 
