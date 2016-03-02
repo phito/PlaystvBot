@@ -78,6 +78,10 @@ def check_subreddit(subreddit):
                 add_cache_reddit(submission.id)
                 return
 
+            # if the playstv title is the default one, we use the reddit title
+            if video_title.startswith('Check out this'):
+                video_title = submission.title
+
             print('PlayTv video found: ' + video_title)
             youtube_id = get_cache_video(video_id)
 
