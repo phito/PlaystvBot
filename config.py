@@ -66,4 +66,4 @@ QUOTES = ['Fired up and ready to serve.',
           'In order to understand recursion, you must first understand recursion.',
           'Merci monsieur squeltique.']
 
-BLACKLIST = ['bttv']
+BLACKLIST = ['bttv', 'ammonzing']
