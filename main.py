@@ -69,7 +69,11 @@ def check_subreddit(subreddit):
             url = match.group(1)
             video_id = playstv.get_video_id(url)
             video_title = playstv.get_title(url)
+            video_author = playstv.get_author(url)
 
+            if video_author in config.BLACKLIST:
+                add_cache_reddit(submission.id)
+                return
             if not video_id:
                 print('Unable to find video id for ' + url)
                 add_cache_reddit(submission.id)

@@ -12,6 +12,8 @@ DOWNLOAD_URL = 'http://m0playscdntv-a.akamaihd.net/video/%s/processed/720.mp4'
 re_vidid = re.compile('akamaihd\.net\/video\/([a-zA-Z0-9-_]*)\/processed')
 # regex used to find the title of a playstv video
 re_title = re.compile(ur'data-share-text=\\"(.*?)\\"')
+# regex used to find the author of a playstv video
+re_author = re.compile(ur'\\"original_author_urlname\\":\\"(.*?)\\"')
 
 def get_title(url):
     h = HTMLParser.HTMLParser()
@@ -32,6 +34,17 @@ def get_video_id(url):
         return match_id.group(1)
     else:
         return False
+
+def get_author(url):
+    h = HTMLParser.HTMLParser()
+    html = h.unescape(requests.get(url, headers={'User-Agent': USER_AGENT}).content.encode('utf-8'))
+    match_id = re.search(re_author, html)
+
+    if match_id:
+        return match_id.group(1)
+    else:
+        return False
+
 
 def download(video_id):
     req = requests.get(DOWNLOAD_URL % video_id, stream=True)

@@ -53,7 +53,7 @@ QUOTES = ['Fired up and ready to serve.',
           'Anything less than immortality is a complete waste of time.',
           'Shut up baby, I know it!',
           'Hey sexy mama, wanna kill all humans?',
-          'I got ants my butt, and I needs to strut!',
+          'I got ants in my butt, and I needs to strut!',
           'I work hard for the money, something, something, give me lots of honey.',
           'My purpose is to pass the butter',
           'Correct horse battery staple.',
@@ -63,4 +63,7 @@ QUOTES = ['Fired up and ready to serve.',
           '[YOU WON\'T BELIEVE THIS AWESOME VIDEO!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)',
           '[GONE SEXUAL]',
           '[Because bots are people, too!](https://www.reddit.com/r/botsrights/)',
-          'People often joke that in order to understand recursion, you must first understand recursion.']
+          'In order to understand recursion, you must first understand recursion.',
+          'Merci monsieur squeltique.']
+
+BLACKLIST = ['bttv']
