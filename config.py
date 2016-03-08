@@ -64,6 +64,11 @@ QUOTES = ['Fired up and ready to serve.',
           '[GONE SEXUAL]',
           '[Because bots are people, too!](https://www.reddit.com/r/botsrights/)',
           'In order to understand recursion, you must first understand recursion.',
-          'Merci monsieur squeltique.']
+          'Merci monsieur squeltique.',
+          'Would you care for some tea?',
+          'Please give some love (and alcohol) to my friend /u/digested_oddshot :)',
+          'So sober... so weak...',
+          'NO liquor? Do svidaniya, comrade.﻿'
+          ]
 
 BLACKLIST = ['bttv', 'ammonzing']
