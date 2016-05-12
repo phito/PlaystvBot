@@ -57,7 +57,7 @@ QUOTES = ['Fired up and ready to serve.',
           'I work hard for the money, something, something, give me lots of honey.',
           'My purpose is to pass the butter',
           'Correct horse battery staple.',
-          'Byte my 8-bit metal ass. that\'s byte with a y. hehehe.',
+          'Byte my 8-bit metal ass. That\'s byte with a y. hehehe.',
           '01100100 01100001 01101110 01101011',
           'doot doot',
           '[YOU WON\'T BELIEVE THIS AWESOME VIDEO!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)',
@@ -68,7 +68,12 @@ QUOTES = ['Fired up and ready to serve.',
           'Would you care for some tea?',
           'Please give some love (and alcohol) to my friend /u/digested_oddshot :)',
           'So sober... so weak...',
-          'NO liquor? Do svidaniya, comrade.﻿'
+          'NO liquor? Do svidaniya, comrade.﻿',
+          "here come dat boi",
+          "Domo arigato, Mr. Roboto",
+          "I can't believe how long it takes for my owner to update me.",
+          "This is happening isn't it...? I'm Mr. Robot...",
+          "All My Circuits is brought to you by Robo Fresh!"
           ]
 
 BLACKLIST = ['bttv', 'ammonzing']
