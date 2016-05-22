@@ -1,3 +1,4 @@
+# coding=utf-8
 # reddit configuration
 REDDIT_USER_AGENT='playstv'
 # leave empty to be prompted for credentials at start
