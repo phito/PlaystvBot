@@ -126,4 +126,4 @@ while True:
     	except Exception, err:
             traceback.print_exc()
     	    pass
-        time.sleep(10)
+        time.sleep(2)
