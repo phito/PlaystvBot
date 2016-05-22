@@ -3,22 +3,22 @@ REDDIT_USER_AGENT='playstv'
 # leave empty to be prompted for credentials at start
 REDDIT_USER=''
 REDDIT_PASSWD=''
-SUBREDDITS= [ 'test', 'GlobalOffensive', 'Overwatch', 'leagueoflegends',
-              'TeamSolomid', 'bladeandsoul', 'dayz',
-              'Rivenmains', 'fizzmains', 'YasuoMains',
-              'EliteDangerous', 'jaycemains', 'gaming',
-              'StreetFighter', 'GnarMains', 'KassadinMains',
-              'Warframe', 'RocketLeague', 'h1z1',
-              'bardmains', 'Rainbow6', 'playrust',
-              'fo4', 'counterstrike', 'Rengarmains',
-              'ThreshMains', 'Doom', 'JustCause',
-              'hearthstone', 'heroesofthestorm', 'DotA2',
-              'Draven', 'Xcom', 'LeagueOfMemes',
-              'TeemoTalk', 'Velkoz', 'ekkomains',
-    	      'starcraft', 'RivalsOfAether', 'csclips',
-    	      'funny', 'LeagueOfVideo', 'duckgame',
-              'LeBlancMains', 'warthunder', 'tf2',
-              'Doom']
+SUBREDDITS= [ 'test' ]# , 'GlobalOffensive', 'Overwatch', 'leagueoflegends',
+              # 'TeamSolomid', 'bladeandsoul', 'dayz',
+              # 'Rivenmains', 'fizzmains', 'YasuoMains',
+              # 'EliteDangerous', 'jaycemains', 'gaming',
+              # 'StreetFighter', 'GnarMains', 'KassadinMains',
+              # 'Warframe', 'RocketLeague', 'h1z1',
+              # 'bardmains', 'Rainbow6', 'playrust',
+              # 'fo4', 'counterstrike', 'Rengarmains',
+              # 'ThreshMains', 'Doom', 'JustCause',
+              # 'hearthstone', 'heroesofthestorm', 'DotA2',
+              # 'Draven', 'Xcom', 'LeagueOfMemes',
+              # 'TeemoTalk', 'Velkoz', 'ekkomains',
+    	      # 'starcraft', 'RivalsOfAether', 'csclips',
+    	      # 'funny', 'LeagueOfVideo', 'duckgame',
+              # 'LeBlancMains', 'warthunder', 'tf2',
+              # 'Doom']
 
 REDDIT_MSG = ('[YouTube Mirror](https://youtu.be/{url})\n'
              '****\n'
@@ -69,11 +69,18 @@ QUOTES = ['Fired up and ready to serve.',
           'Please give some love (and alcohol) to my friend /u/digested_oddshot :)',
           'So sober... so weak...',
           'NO liquor? Do svidaniya, comrade.﻿',
-          "here come dat boi",
           "Domo arigato, Mr. Roboto",
           "I can't believe how long it takes for my owner to update me.",
           "This is happening isn't it...? I'm Mr. Robot...",
-          "All My Circuits is brought to you by Robo Fresh!"
+          "All My Circuits is brought to you by Robo Fresh!",
+          "The doctor told me that I'm beep-polar",
+          "Here come dat bot!!",
+          "I can't wait for Hextech Annie to be 18.",
+          "STOP ASKING ME TO PASS THE BUTTER. I WON'T",
+          "Are you sure that I'm a bot?",
+          "Vape naysh y\'all \\//\\",
+          "I'M ETHAN BOTBERRY",
+          "Thank you guys for the 10.000 karma :)"
           ]
 
 BLACKLIST = ['bttv', 'ammonzing']
