@@ -23,7 +23,7 @@ def get_title(url):
     if match_title:
         return match_title.group(1)
     else:
-        return False
+        return None
 
 def get_video_id(url):
     h = HTMLParser.HTMLParser()
@@ -33,7 +33,7 @@ def get_video_id(url):
     if match_id:
         return match_id.group(1)
     else:
-        return False
+        return None
 
 def get_author(url):
     h = HTMLParser.HTMLParser()
@@ -43,7 +43,7 @@ def get_author(url):
     if match_id:
         return match_id.group(1)
     else:
-        return False
+        return None
 
 
 def download(video_id):
